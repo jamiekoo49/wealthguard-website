@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Python (only the tools/ helper scripts use Python)
+__pycache__/
+*.pyc
+.venv/
+venv/

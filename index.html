@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WealthGuard Investment Recovery Pte Ltd</title>
+<meta name="description" content="WealthGuard Investment Recovery is a specialist consultancy helping clients in Singapore and Hong Kong pursue complaints for mis-sold investment products — without going straight to litigation.">
+<meta property="og:title" content="WealthGuard Investment Recovery Pte Ltd">
+<meta property="og:description" content="Investment mis-selling &amp; recovery specialists for non-retail clients in Singapore and Hong Kong.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/apple-touch-icon.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<!-- React is self-hosted; the runtime skips its CDN fetch when window.React already exists. -->
+<script src="assets/vendor/react.production.min.js"></script>
+<script src="assets/vendor/react-dom.production.min.js"></script>
+<script src="assets/js/dc-runtime.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-07.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-08.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-09.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-10.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-11.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-13.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-14.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-15.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-16.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-17.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-18.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Archivo', system-ui, sans-serif; color: #0f2942; background: #f7f5f0; -webkit-font-smoothing: antialiased; }
+  ::selection { background: #c9a15a; color: #0f2942; }
+  @keyframes wgUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes wgFade { from { opacity: 0; } to { opacity: 1; } }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(247,245,240,0.85);backdrop-filter:blur(12px);border-bottom:1px solid #e5e0d6;">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <button onclick="{{ goHome }}" style="appearance:none;border:none;background:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:0;">
+        <img src="assets/img/logo.png" alt="WealthGuard Investment Recovery" style="height:46px;width:auto;display:block;">
+        <span style="display:flex;flex-direction:column;line-height:1;text-align:left;">
+          <span style="font-family:'Spectral',serif;font-size:20px;font-weight:600;color:#0f2942;letter-spacing:-0.01em;">WealthGuard</span>
+          <span style="font-size:9.5px;font-weight:600;letter-spacing:0.22em;color:#8a94a0;margin-top:4px;">INVESTMENT RECOVERY</span>
+        </span>
+      </button>
+
+      <nav style="display:flex;align-items:center;gap:26px;">
+        <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="7">
+          <button onclick="{{ tab.onClick }}" style="{{ tab.style }}">{{ tab.label }}</button>
+        </sc-for>
+      </nav>
+
+      <button onclick="{{ goContact }}" style="appearance:none;border:none;cursor:pointer;background:#0f2942;color:#fff;font-family:inherit;font-size:14px;font-weight:600;padding:12px 20px;border-radius:8px;white-space:nowrap;transition:background .2s;" style-hover="background:#1c3d5c;">Free consultation</button>
+    </div>
+  </header>
+
+  <main style="flex:1;">
+
+    <!-- ============ HOME ============ -->
+    <sc-if value="{{ showHome }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <!-- hero -->
+      <section style="max-width:1180px;margin:0 auto;padding:88px 32px 72px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;">
+        <div>
+          <span style="display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;margin-bottom:24px;">
+            <span style="width:22px;height:1px;background:{{ accent }};"></span>Investment mis-selling specialists
+          </span>
+          <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(38px,4.6vw,60px);line-height:1.06;letter-spacing:-0.02em;margin:0 0 24px;color:#0f2942;">Your shield against investment mis-selling.</h1>
+          <p style="font-size:18px;line-height:1.6;color:#4a5a68;margin:0 0 36px;max-width:520px;">When a financial product cost you more than it should have, your first complaint is the one that counts. We help you make it well-articulated, robust, and heard by senior management or the regulators.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;">
+            <button onclick="{{ goContact }}" style="appearance:none;border:none;cursor:pointer;background:#0f2942;color:#fff;font-family:inherit;font-size:15px;font-weight:600;padding:15px 26px;border-radius:9px;transition:background .2s;" style-hover="background:#1c3d5c;">Book a free consultation</button>
+            <a href="mailto:WealthGuard_Investment_Recovery@outlook.com" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;color:#0f2942;font-size:15px;font-weight:600;padding:15px 22px;border:1px solid #d9d2c4;border-radius:9px;transition:border-color .2s;" style-hover="border-color:#0f2942;">Email us</a>
+            <a href="https://wa.me/6589778725" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;color:#0f2942;font-size:15px;font-weight:600;padding:15px 22px;border:1px solid #d9d2c4;border-radius:9px;transition:border-color .2s;" style-hover="border-color:#0f2942;">WhatsApp / WeChat</a>
+          </div>
+        </div>
+        <!-- abstract mark -->
+        <div style="position:relative;aspect-ratio:1;display:flex;align-items:center;justify-content:center;">
+          <div style="position:absolute;width:100%;height:100%;border-radius:50%;border:1px solid #e2dccf;"></div>
+          <div style="position:absolute;width:72%;height:72%;border-radius:50%;border:1px solid #e2dccf;"></div>
+          <div style="position:absolute;width:44%;height:44%;border-radius:50%;border:1px dashed #d8c8a6;"></div>
+          <div style="position:relative;width:132px;height:158px;background:#0f2942;clip-path:polygon(50% 0%,100% 16%,100% 56%,50% 100%,0% 56%,0% 16%);display:flex;align-items:center;justify-content:center;box-shadow:0 24px 50px -18px rgba(15,41,66,0.5);">
+            <div style="width:78px;height:96px;border:1.5px solid rgba(201,161,90,0.55);clip-path:polygon(50% 0%,100% 16%,100% 56%,50% 100%,0% 56%,0% 16%);display:flex;align-items:center;justify-content:center;">
+              <span style="width:10px;height:10px;background:{{ accent }};border-radius:50%;"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- context band -->
+      <section style="background:#0f2942;color:#f7f5f0;">
+        <div style="max-width:1180px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
+          <p style="font-family:'Spectral',serif;font-size:22px;line-height:1.5;margin:0;color:#f2ede3;font-weight:400;">"Having lived through two financial crises, we have seen the toll investment losses take: the stress, the family disputes. We can accompany you through this difficult journey."</p>
+          <div style="border-left:1px solid rgba(255,255,255,0.16);padding-left:32px;">
+            <p style="font-size:16px;line-height:1.65;color:#c3cdd6;margin:0 0 16px;">We are well-positioned to assist non-retail clients of wealth management and private banks operating in Singapore and Hong Kong, ensuring your concerns on potential mis-selling reach the people who can act on them.</p>
+            <p style="font-size:14px;color:#8fa0ad;margin:0;">FDRC · FIDReC · HKMA · MAS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- process teaser -->
+      <section style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px;flex-wrap:wrap;">
+          <div>
+            <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">How we work</span>
+            <h2 style="font-family:'Spectral',serif;font-weight:600;font-size:34px;letter-spacing:-0.015em;margin:12px 0 0;">A structured, rigorous approach.</h2>
+          </div>
+          <button onclick="{{ goServices }}" style="appearance:none;border:none;background:none;cursor:pointer;color:#0f2942;font-family:inherit;font-size:15px;font-weight:600;border-bottom:2px solid {{ accent }};padding-bottom:3px;">See all services →</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+          <sc-for list="{{ services }}" as="s" hint-placeholder-count="3">
+            <div style="background:#fff;border:1px solid #e9e3d7;border-radius:14px;padding:30px 28px;">
+              <span style="font-family:'Spectral',serif;font-size:15px;font-weight:600;color:{{ accent }};">{{ s.num }}</span>
+              <h3 style="font-size:19px;font-weight:600;letter-spacing:-0.01em;margin:14px 0 0;line-height:1.25;">{{ s.title }}</h3>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+    </div>
+    </sc-if>
+
+    <!-- ============ SERVICES ============ -->
+    <sc-if value="{{ showServices }}">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+      <div style="max-width:760px;margin-bottom:56px;">
+        <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">Our services</span>
+        <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-0.02em;line-height:1.08;margin:14px 0 22px;">Investment recovery &amp; mis-selling complaint specialists.</h1>
+        <p style="font-size:18px;line-height:1.6;color:#4a5a68;margin:0;">We help you assess how your losses were realized and whether the institution failed to meet regulatory requirements, then recommend the strategy most likely to get your complaint taken seriously, and get you compensated.</p>
+      </div>
+
+      <div style="display:grid;gap:20px;">
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="3">
+          <div style="background:#fff;border:1px solid #e9e3d7;border-radius:16px;padding:38px 40px;display:grid;grid-template-columns:56px 1fr;gap:28px;align-items:start;">
+            <span style="font-family:'Spectral',serif;font-size:26px;font-weight:600;color:{{ accent }};line-height:1;">{{ s.num }}</span>
+            <div>
+              <h3 style="font-size:23px;font-weight:600;letter-spacing:-0.015em;margin:0 0 12px;">{{ s.title }}</h3>
+              <p style="font-size:16px;line-height:1.65;color:#4a5a68;margin:0;max-width:720px;">{{ s.long }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="margin-top:24px;background:#0f2942;color:#f7f5f0;border-radius:16px;padding:44px 44px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;">
+        <div>
+          <h3 style="font-family:'Spectral',serif;font-size:26px;font-weight:600;margin:0 0 12px;">Need legal action?</h3>
+          <p style="font-size:16px;line-height:1.65;color:#c3cdd6;margin:0;max-width:640px;">If you would like to pursue litigation, we can refer you to a trusted legal firm and share our full review work and conclusion, reducing your legal fees and letting the firm act promptly on your behalf.</p>
+        </div>
+        <button onclick="{{ goContact }}" style="appearance:none;border:none;cursor:pointer;background:{{ accent }};color:#0f2942;font-family:inherit;font-size:15px;font-weight:700;padding:15px 26px;border-radius:9px;white-space:nowrap;">Talk to us</button>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ WHY US ============ -->
+    <sc-if value="{{ showWhyUs }}">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+      <div style="max-width:720px;margin-bottom:56px;">
+        <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">Why us</span>
+        <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-0.02em;line-height:1.08;margin:14px 0 22px;">Why should I engage WealthGuard?</h1>
+        <p style="font-size:18px;line-height:1.6;color:#4a5a68;margin:0;">Financial institutions field entire teams of lawyers, compliance and investment experts to defend complaints. We level that playing field.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <sc-for list="{{ reasons }}" as="r" hint-placeholder-count="6">
+          <div style="background:#fff;border:1px solid #e9e3d7;border-radius:16px;padding:32px 32px;">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+              <span style="width:34px;height:34px;flex:none;border:1px solid #d8c8a6;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Spectral',serif;font-size:15px;font-weight:600;color:{{ accent }};">{{ r.num }}</span>
+              <h3 style="font-size:19px;font-weight:600;letter-spacing:-0.01em;margin:0;">{{ r.title }}</h3>
+            </div>
+            <p style="font-size:15.5px;line-height:1.65;color:#5a6a78;margin:0;">{{ r.body }}</p>
+            <sc-if value="{{ r.hasBullets }}">
+              <ul style="margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;">
+                <sc-for list="{{ r.bullets }}" as="b" hint-placeholder-count="4">
+                  <li style="position:relative;padding-left:22px;font-size:14.5px;line-height:1.55;color:#5a6a78;">
+                    <span style="position:absolute;left:0;top:8px;width:6px;height:6px;background:{{ accent }};border-radius:50%;"></span>{{ b }}
+                  </li>
+                </sc-for>
+              </ul>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ EXPERT ============ -->
+    <sc-if value="{{ showExpert }}">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+      <div style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:start;">
+        <div>
+          <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">Our expert</span>
+          <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(30px,3.4vw,42px);letter-spacing:-0.02em;line-height:1.1;margin:14px 0 28px;">Meet the WealthGuard team.</h1>
+          <div style="background:#fff;border:1px solid #e9e3d7;border-radius:16px;padding:30px;">
+            <!-- Swap expert-placeholder.jpg for the real portrait (square works best). -->
+            <img src="assets/img/expert-placeholder.jpg" alt="Principal consultant" style="width:100%;aspect-ratio:1;border-radius:12px;object-fit:cover;display:block;margin-bottom:18px;">
+            <div style="font-size:17px;font-weight:600;">Principal Consultant</div>
+            <div style="font-size:14px;color:#8a94a0;margin-top:4px;">Wealth Management Compliance · 30+ years</div>
+          </div>
+        </div>
+        <div style="display:grid;gap:22px;align-content:start;padding-top:56px;">
+          <p style="font-family:'Spectral',serif;font-size:24px;line-height:1.5;color:#0f2942;margin:0;font-weight:400;">A veteran in the Wealth Management Compliance space, with over 30 years of experience across a range of financial institutions.</p>
+          <sc-for list="{{ expertPoints }}" as="p" hint-placeholder-count="3">
+            <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;border-top:1px solid #e5e0d6;padding-top:22px;">
+              <span style="width:8px;height:8px;margin-top:8px;background:{{ accent }};border-radius:50%;"></span>
+              <p style="font-size:16.5px;line-height:1.65;color:#4a5a68;margin:0;">{{ p }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ FEES ============ -->
+    <sc-if value="{{ showFees }}">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+      <div style="max-width:680px;margin-bottom:52px;">
+        <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">Our fees</span>
+        <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-0.02em;line-height:1.08;margin:14px 0 22px;">Competitive pricing.</h1>
+        <p style="font-size:18px;line-height:1.6;color:#4a5a68;margin:0;">Our fees are lower than the average junior partner at legal firms across Singapore and Hong Kong, for the same level of service, if not more.</p>
+      </div>
+
+      <div style="max-width:720px;background:#fff;border:1px solid #e9e3d7;border-radius:16px;overflow:hidden;">
+        <sc-for list="{{ fees }}" as="f" hint-placeholder-count="3">
+          <div style="display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:28px 34px;border-bottom:1px solid #eee8db;">
+            <div>
+              <div style="font-size:19px;font-weight:600;letter-spacing:-0.01em;">{{ f.type }}</div>
+              <div style="font-size:14px;color:#8a94a0;margin-top:4px;">{{ f.note }}</div>
+            </div>
+            <div style="font-family:'Spectral',serif;font-size:20px;font-weight:600;color:{{ f.color }};white-space:nowrap;">{{ f.detail }}</div>
+          </div>
+        </sc-for>
+        <div style="padding:26px 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#faf8f3;">
+          <span style="font-size:15px;color:#5a6a78;">Want the full fee schedule for your situation?</span>
+          <button onclick="{{ goContact }}" style="appearance:none;border:none;cursor:pointer;background:#0f2942;color:#fff;font-family:inherit;font-size:14px;font-weight:600;padding:12px 22px;border-radius:8px;">Contact us</button>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ FAQ ============ -->
+    <sc-if value="{{ showFaqs }}">
+    <div style="max-width:840px;margin:0 auto;padding:80px 32px;">
+      <div style="margin-bottom:48px;">
+        <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">FAQs</span>
+        <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-0.02em;line-height:1.08;margin:14px 0 0;">Frequently asked questions.</h1>
+      </div>
+      <div style="display:grid;gap:0;border-top:1px solid #e5e0d6;">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="7">
+          <div style="border-bottom:1px solid #e5e0d6;">
+            <button onclick="{{ f.toggle }}" style="appearance:none;border:none;background:none;cursor:pointer;width:100%;text-align:left;font-family:inherit;padding:26px 0;display:flex;align-items:center;gap:20px;color:#0f2942;">
+              <span style="font-family:'Spectral',serif;font-size:16px;font-weight:600;color:{{ accent }};flex:none;width:24px;">{{ f.num }}</span>
+              <span style="flex:1;font-size:18.5px;font-weight:600;letter-spacing:-0.01em;">{{ f.q }}</span>
+              <span style="flex:none;font-size:24px;font-weight:400;color:#a8b0b9;transform:{{ f.iconRotate }};transition:transform .25s;">+</span>
+            </button>
+            <sc-if value="{{ f.open }}">
+              <div style="padding:0 0 28px 44px;">
+                <p style="font-size:16px;line-height:1.7;color:#4a5a68;margin:0;">{{ f.intro }}</p>
+                <sc-if value="{{ f.hasBullets }}">
+                  <ul style="margin:14px 0 0;padding:0;list-style:none;display:grid;gap:9px;">
+                    <sc-for list="{{ f.bullets }}" as="b" hint-placeholder-count="3">
+                      <li style="position:relative;padding-left:22px;font-size:15.5px;line-height:1.55;color:#4a5a68;">
+                        <span style="position:absolute;left:0;top:8px;width:6px;height:6px;background:{{ accent }};border-radius:50%;"></span>{{ b }}
+                      </li>
+                    </sc-for>
+                  </ul>
+                </sc-if>
+                <sc-if value="{{ f.hasOutro }}">
+                  <p style="font-size:16px;line-height:1.7;color:#4a5a68;margin:14px 0 0;">{{ f.outro }}</p>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ CONTACT ============ -->
+    <sc-if value="{{ showContact }}">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 32px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+        <div>
+          <span style="font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:#8a6d3b;text-transform:uppercase;">Contact us</span>
+          <h1 style="font-family:'Spectral',serif;font-weight:600;font-size:clamp(32px,4vw,48px);letter-spacing:-0.02em;line-height:1.08;margin:14px 0 20px;">Get in touch with WealthGuard.</h1>
+          <p style="font-size:18px;line-height:1.6;color:#4a5a68;margin:0 0 20px;">Ready to discuss your situation? Reach out for a free consultation, and we will reply as soon as possible.</p>
+          <p style="font-size:15px;line-height:1.6;color:#8a94a0;margin:0;">Your initial consultation is free of charge, and everything you share with us is kept strictly confidential.</p>
+        </div>
+        <div style="display:grid;gap:16px;">
+          <a href="mailto:WealthGuard_Investment_Recovery@outlook.com" style="text-decoration:none;background:#fff;border:1px solid #e9e3d7;border-radius:14px;padding:26px 28px;display:block;transition:border-color .2s;" style-hover="border-color:#0f2942;">
+            <div style="font-size:12.5px;font-weight:600;letter-spacing:0.12em;color:#8a6d3b;text-transform:uppercase;margin-bottom:8px;">Email</div>
+            <div style="font-size:17px;font-weight:600;color:#0f2942;word-break:break-all;">WealthGuard_Investment_Recovery@outlook.com</div>
+          </a>
+          <a href="https://wa.me/6589778725" style="text-decoration:none;background:#fff;border:1px solid #e9e3d7;border-radius:14px;padding:26px 28px;display:block;transition:border-color .2s;" style-hover="border-color:#0f2942;">
+            <div style="font-size:12.5px;font-weight:600;letter-spacing:0.12em;color:#8a6d3b;text-transform:uppercase;margin-bottom:8px;">WhatsApp / WeChat</div>
+            <div style="font-size:17px;font-weight:600;color:#0f2942;">+65 8977 8725</div>
+          </a>
+          <div style="background:#0f2942;border-radius:14px;padding:26px 28px;color:#f7f5f0;">
+            <div style="font-size:12.5px;font-weight:600;letter-spacing:0.12em;color:{{ accent }};text-transform:uppercase;margin-bottom:8px;">Free consultation</div>
+            <p style="font-size:15.5px;line-height:1.6;color:#c3cdd6;margin:0 0 16px;">Not sure if you have a case? The easiest way to find out is to let us take a look, at no cost.</p>
+            <a href="mailto:WealthGuard_Investment_Recovery@outlook.com?subject=Free%20consultation%20request" style="text-decoration:none;display:inline-block;background:{{ accent }};color:#0f2942;font-size:14px;font-weight:700;padding:12px 22px;border-radius:8px;">Request a consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0f2942;color:#c3cdd6;margin-top:auto;">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 32px 40px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.12);">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <img src="assets/img/logo.png" alt="WealthGuard Investment Recovery" style="height:40px;width:auto;display:block;">
+            <span style="font-family:'Spectral',serif;font-size:19px;font-weight:600;color:#f7f5f0;">WealthGuard</span>
+          </div>
+          <p style="font-size:14.5px;line-height:1.6;color:#8fa0ad;margin:0;max-width:340px;">Investment recovery &amp; mis-selling complaint specialists, serving non-retail clients in Singapore and Hong Kong.</p>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;color:#6f818f;text-transform:uppercase;margin-bottom:16px;">Contact</div>
+          <a href="mailto:WealthGuard_Investment_Recovery@outlook.com" style="display:block;color:#c3cdd6;text-decoration:none;font-size:14.5px;margin-bottom:10px;word-break:break-all;">WealthGuard_Investment_Recovery@outlook.com</a>
+          <a href="https://wa.me/6589778725" style="display:block;color:#c3cdd6;text-decoration:none;font-size:14.5px;">WhatsApp / WeChat · +65 8977 8725</a>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;color:#6f818f;text-transform:uppercase;margin-bottom:16px;">Explore</div>
+          <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="7">
+            <button onclick="{{ tab.onClick }}" style="display:block;appearance:none;border:none;background:none;cursor:pointer;color:#c3cdd6;font-family:inherit;font-size:14.5px;padding:0 0 9px;text-align:left;">{{ tab.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <p style="font-size:12.5px;line-height:1.6;color:#6f818f;margin:24px 0 0;max-width:820px;">WealthGuard is a specialist consultancy focused on Investment Recovery and Regulatory Compliance, not a law firm. Where a case requires formal litigation, we refer clients to trusted legal partners. © 2026 WealthGuard Investment Recovery.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#c9a15a&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#c9a15a&quot;,&quot;#b0894a&quot;,&quot;#6b8fb5&quot;,&quot;#0d3b34&quot;],&quot;section&quot;:&quot;Theme&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 'home', openFaq: 0 };
+
+  go(id) { this.setState({ tab: id }); if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+  renderVals() {
+    const accent = this.props.accentColor || '#c9a15a';
+    const tab = this.state.tab;
+    const TABS = [
+      { id: 'home', label: 'Home' },
+      { id: 'services', label: 'Services' },
+      { id: 'why', label: 'Why Us' },
+      { id: 'expert', label: 'Our Expert' },
+      { id: 'fees', label: 'Fees' },
+      { id: 'faqs', label: 'FAQs' },
+      { id: 'contact', label: 'Contact' },
+    ];
+    const baseNav = 'appearance:none;border:none;background:none;font-family:inherit;cursor:pointer;padding:6px 0;font-size:14.5px;font-weight:500;letter-spacing:0.005em;transition:color .2s;';
+    const tabs = TABS.map(t => ({
+      label: t.label,
+      onClick: () => this.go(t.id),
+      style: tab === t.id
+        ? baseNav + 'color:#0f2942;box-shadow:inset 0 -2px 0 ' + accent + ';'
+        : baseNav + 'color:#7a8592;',
+    }));
+
+    const services = [
+      { num: '01', title: 'Comprehensive Case Assessment', short: '', long: "We do not guess; we investigate. We begin with a deep-dive interview and a thorough review of all relevant documents and information to assess the merits of your complaint and the areas we should focus on." },
+      { num: '02', title: 'Strategic Correspondence & Advocacy', short: '', long: 'The biggest hurdle in investment recovery is the "paperwork wall." We help you draft a professional, evidence-backed complaint letter and every subsequent correspondence with the institution until a resolution is reached.' },
+      { num: '03', title: 'Escalation to Regulatory Bodies', short: '', long: "If the financial institution refuses to acknowledge a valid claim, we do not stop there. We assist in raising the complaint in writing to the appropriate complaint resolution bodies or regulator, where required." },
+    ];
+
+    const reasons = [
+      { num: '1', title: 'Professional Opinion', body: "If you feel the institution may not have acted in your best interests or fulfilled its obligations, and you want a professional opinion before deciding your next step, we are here to advise and support you.", hasBullets: false, bullets: [] },
+      { num: '2', title: 'Professional Support', body: "Institutions have teams of professionals such as lawyers, compliance and investment experts to defend complaints. Cases are easily dismissed when complainants cannot raise their concerns effectively. WealthGuard levels that playing field.", hasBullets: false, bullets: [] },
+      { num: '3', title: 'Proven Track Record', body: 'The principal consultant has successfully helped people in exactly these situations. So why not you.', hasBullets: false, bullets: [] },
+      { num: '4', title: 'Competitive Fees', body: 'Our fees are lower than the average junior partner at legal firms across Singapore and Hong Kong, while you get the same level of service or advice, if not more.', hasBullets: false, bullets: [] },
+      { num: '5', title: 'Benefits of Our Approach', body: 'There are real advantages to seeking a mutually satisfactory resolution with your institution rather than through legal means:', hasBullets: true, bullets: [
+        'Institutions are usually more willing to listen and reach a resolution when lawyers are not involved.',
+        'The absolute cost of resolution is much less than engaging a legal firm.',
+        'Legal action is a big step and can be very stressful, so it should be a last resort.',
+        'If legal action does become necessary, our groundwork can substantially reduce your legal fees.',
+      ] },
+      { num: '6', title: 'Confidentiality', body: 'We are committed to keeping everything you share with us strictly confidential.', hasBullets: false, bullets: [] },
+    ];
+
+    const expertPoints = [
+      'A detailed understanding of Singapore and Hong Kong regulations and regulatory expectations, especially in delivering fair outcomes to clients in the sale of investment products.',
+      'Has managed numerous client complaints throughout his career, including those escalated to regulators, resolution bodies and the courts, ensuring resolutions were fair to the facts of each case.',
+      'Has successfully helped people who were victims of mis-selling.',
+    ];
+
+    const fees = [
+      { type: 'Initial Consultation', note: 'A no-cost first conversation about your situation.', detail: 'Free of charge', color: accent },
+      { type: 'Subsequent Consultation', note: 'Ongoing advisory as your case develops.', detail: 'Contact us', color: '#0f2942' },
+      { type: 'Performance-Based Fee', note: 'Aligned with the outcome we achieve together.', detail: 'Contact us', color: '#0f2942' },
+    ];
+
+    const FAQS = [
+      { q: 'What exactly is "investment mis-selling"?', intro: 'Mis-selling occurs when a financial product is sold to you in a way that is misleading, ignores your investment objective or risk tolerance, or fails to disclose key information. This includes:', bullets: ['Being recommended a high-risk product that does not suit your profile or personal circumstances.', "Being pressured into an investment you did not fully understand."], outro: '' },
+      { q: 'Does a market loss automatically mean I was mis-sold?', intro: 'Not necessarily. All investments carry some level of market risk. However, if the process by which the investment was sold to you violated regulatory standards, such as failing to perform a suitability test, you may have a valid claim for recovery regardless of how the market performed.', bullets: [], outro: '' },
+      { q: 'How do I know if I have a case?', intro: 'The easiest way is to let us take a look. We review your original investment goals, the brochures and documents provided at the time of sale, and the subsequent performance. If there is a gap between what you were promised and what the regulations require, we will find it.', bullets: [], outro: '' },
+      { q: 'How long does the recovery process usually take?', intro: 'Every case is unique. Some institutions resolve complaints within a month of receiving our formal letter, while complex cases can take longer. Our goal is always the fastest resolution possible without compromising the quality of your claim.', bullets: [], outro: '' },
+      { q: 'What documents should I have ready?', intro: 'To provide the most accurate assessment, it helps to have:', bullets: ['The account opening agreement.', 'The investor profile assessment form.', 'The original investment agreement or contract.', 'Order-taking correspondence with the relationship manager or investment counsellor.', 'Records of correspondence (emails/letters) with the institution.', 'Portfolio statements.'], outro: "Do not worry if you are missing something, and we can help you request copies." },
+      { q: 'Are you a law firm?', intro: 'No. WealthGuard is a specialist consultancy focused on Investment Recovery and Regulatory Compliance. We handle the technical assessment and administrative complaint process. If your case requires formal litigation, we refer you to our network of trusted legal partners with a "ready-to-go" evidence file to save you time and legal fees.', bullets: [], outro: '' },
+      { q: 'What if the financial institution rejects my claim?', intro: "Rejection is a common tactic used to see if a complainant will give up. If your claim has merit, we do not stop there. We assist you in escalating the matter to the relevant complaint resolution bodies or regulator to ensure an independent review of your case.", bullets: [], outro: '' },
+    ];
+    const faqs = FAQS.map((f, i) => ({
+      num: String(i + 1).padStart(2, '0'),
+      q: f.q,
+      intro: f.intro,
+      hasBullets: f.bullets.length > 0,
+      bullets: f.bullets,
+      hasOutro: !!f.outro,
+      outro: f.outro,
+      open: this.state.openFaq === i,
+      iconRotate: this.state.openFaq === i ? 'rotate(45deg)' : 'rotate(0deg)',
+      toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })),
+    }));
+
+    return {
+      accent,
+      tabs,
+      goHome: () => this.go('home'),
+      goServices: () => this.go('services'),
+      goContact: () => this.go('contact'),
+      showHome: tab === 'home',
+      showServices: tab === 'services',
+      showWhyUs: tab === 'why',
+      showExpert: tab === 'expert',
+      showFees: tab === 'fees',
+      showFaqs: tab === 'faqs',
+      showContact: tab === 'contact',
+      services, reasons, expertPoints, fees, faqs,
+    };
+  }
+}
+</script>
+
+
+</body></html>
